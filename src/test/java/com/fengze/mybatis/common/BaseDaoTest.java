@@ -43,11 +43,11 @@ public class BaseDaoTest {
         UserMapper userMapper = session.getMapper(UserMapper.class);
 
         User u = new User();
-        u.setUserName("wanwu");
+        u.setUserName("账上");
         u.setPassword("dd00000dddddd");
         u.setAddress("ssssssssss");
-        u.setCellPhone("1238096456");
-        u.setEmail("shen@fdgfd.com");
+        u.setCellPhone("12382096456");
+        u.setEmail("shen@fdegfd.com");
         u.setRealName("389765432");
         u.setUserType("0");
         u.setState("1006");

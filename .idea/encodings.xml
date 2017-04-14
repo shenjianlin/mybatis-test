@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/.gitignore" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/java/com/fengze/mybatis/mapper/OrderMapper.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/.gitignore" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/fengze/mybatis/mapper/OrderMapper.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/fengze/mybatis/mapper/OrderMapper.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/java/com/fengze/mybatis/mapper/ProDetailMapper.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/fengze/mybatis/mapper/ProDetailMapper.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/fengze/mybatis/mapper/ProDetailMapper.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/java/com/fengze/mybatis/mapper/ProductMapper.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/fengze/mybatis/mapper/ProductMapper.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/fengze/mybatis/mapper/ProductMapper.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/fengze/mybatis/mapper/UserMapper.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/fengze/mybatis/mapper/UserMapper.xml" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

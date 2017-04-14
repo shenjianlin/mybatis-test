@@ -38,7 +38,8 @@ public class UserMapperTest {
     }
 
     /**
-     * 测试一级缓存
+     * 测试一级缓存 在同一个session中查询同一条数据不会访问数据库
+     * 直接使用缓存
      * @throws Exception
      */
     @Test
@@ -72,14 +73,14 @@ public class UserMapperTest {
         UserMapper userMapper1 = sqlSession1.getMapper(UserMapper.class);//创建代理对象
         //下边查询使用一个SqlSession
         //第一次发起请求，查询id为1的用户
-        UserDo user1 = userMapper1.findUserById(1);
+        UserDo user1 = userMapper1.findUserById(1004);
         System.out.println(user1.getUserName());
         //不关闭SqlSession无法写进二级缓存区域中
         sqlSession1.close();
 
         UserMapper userMapper2 = sqlSession2.getMapper(UserMapper.class);//创建代理对象
         //第二次发起请求，查询id为1的用户
-        UserDo user2 = userMapper2.findUserById(1);
+        UserDo user2 = userMapper2.findUserById(1004);
         System.out.println(user2.getUserName());
         sqlSession2.close();
     }

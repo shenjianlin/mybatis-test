@@ -5,13 +5,14 @@
 <mapper namespace="com.fengze.mybatis.mapper.UserMapper">
 
     <!--<cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>-->
-    <!--<cache type="org.mybatis.caches.ehcache.EhcacheCache"/>-->
+    <cache type="org.mybatis.caches.ehcache.EhcacheCache"/>
 
     <select id="findUserById" parameterType="java.lang.Integer" resultType="UserDo">
         select user_id userId,user_name userName, pass_word password from tb_user where user_id=#{id}
     </select>
 
-    <insert id="insert" parameterType="UserDo">
+    <!--插入时主键自动回写-->
+    <insert id="insert" parameterType="UserDo" useGeneratedKeys="true" keyProperty="id">
         insert into tb_user(user_name,pass_word,real_name,email,cell_phone,address,user_type,state,create_by,create_date,update_by,update_date)
         value(#{userName},#{password},#{realName},#{email},#{cellPhone},#{address},#{userType},#{state},#{createBy},#{createDate},#{updateBy},#{updateDate})
     </insert>

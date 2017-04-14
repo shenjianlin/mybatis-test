@@ -7,7 +7,7 @@ import com.fengze.mybatis.domain.ProductDo;
 import java.util.List;
 
 /**
- * Created by Administrator on 2016-12-01.
+ *  Created by ASUS on 2017/4/12
  */
 public interface ProductMapper {
 
